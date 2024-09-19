@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Tarefas</title>
-    
     <link rel="stylesheet" href="css/style.css">
     <script src="js/back.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
         <h1>Gerenciador de Tarefas</h1>
-        <!-- Ícone de usuário por SVG inline -->
-        <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img" aria-label="Ícone do usuário">
-            <path fill="white" d="M224 256A128 128 0 1 0 224 0a128 128 0 0 0 0 256zm89.6 32h-11.3c-22 10.3-46.6 16-72.3 16s-50.3-5.7-72.3-16h-11.3C67.6 288 0 355.6 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-82.8-67.6-150.4-150.4-150.4z"/>
-        </svg>
+        <div class="header-icons">
+            <button id="dark-mode-toggle" aria-label="Alternar modo escuro">🌙</button>
+            <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img" aria-label="Ícone do usuário">
+                <path fill="white" d="M224 256A128 128 0 1 0 224 0a128 128 0 0 0 0 256zm89.6 32h-11.3c-22 10.3-46.6 16-72.3 16s-50.3-5.7-72.3-16h-11.3C67.6 288 0 355.6 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-82.8-67.6-150.4-150.4-150.4z"/>
+            </svg>
+        </div>
     </header>
-
-    <!-- Botão para alternar entre modo claro e escuro -->
-    <button class="toggle-mode" aria-label="Alternar entre modo claro e escuro">🌙</button>
 
     <div class="accessibility-info" aria-live="polite">
         Dica de acessibilidade: Use a tecla "Tab" para navegar entre os botões e "Enter" para acioná-los.

@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.querySelector('.toggle-mode');
+    // Seleciona o botão de Dark Mode
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
     
-    toggleButton.addEventListener('click', function () {
+    // Adiciona um ouvinte de eventos para o clique do botão de Dark Mode
+    darkModeToggle.addEventListener('click', function () {
         document.body.classList.toggle('dark-mode');
     });
 
+    // Adiciona um ouvinte de eventos para o clique do botão de adicionar tarefa
     document.getElementById('add-task').addEventListener('click', addTask);
 
     function addTask() {
@@ -36,16 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
             </button>
         `;
 
+        // Adiciona um ouvinte de eventos para o botão de completar
         taskItem.querySelector('.complete-btn').addEventListener('click', function() {
             taskItem.classList.toggle('completed');
         });
 
+        // Adiciona um ouvinte de eventos para o botão de excluir
         taskItem.querySelector('.delete-btn').addEventListener('click', function() {
             taskItem.remove();
         });
 
+        // Adiciona a tarefa à lista
         taskList.appendChild(taskItem);
 
+        // Limpa o campo de entrada e foca nele
         taskInput.value = '';
         taskInput.focus();
     }
