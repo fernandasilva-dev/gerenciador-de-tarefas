@@ -137,3 +137,11 @@ li.completed span {
 button:focus, input:focus {
     outline: 3px solid #218838;
 }
+
+.accessibility-info {
+    padding: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
